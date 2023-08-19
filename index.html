@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<style>
+
+body{
+
+width:100%;
+height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+.sec{
+background-color:#D3D3D3;
+text-align:center;
+border:2px solid black;
+border-radius: 10px;
+height:180px;
+width:300px;
+}
+#kilo{
+border:none;
+border:2px solid black;
+border-radius: 8px;
+}
+#pound{
+border:none;
+border:2px solid black;
+border-radius: 8px;
+}
+#btn{
+margin:5px;
+border:2px solid black;
+border-radius: 10px;
+
+}
+.lab{
+font-style:italic;
+}
+input{
+padding:5px;
+}
+</style>
+</head>
+<body>
+<div class="sec"> <label class="lab">IN KILOGRAMS: </label>
+<br>
+<input type="number" id="kilo" placeholder="kilograms">
+<br> <button onclick="kilo()" class="lab" id="btn">TO POUNDS</button>
+<hr> <label class="lab">IN POUNDS: </label>
+<br>
+<input type="number" id="pound" placeholder="pounds">
+<br> <button onclick="pound()" class="lab" id="btn">TO KILOGRAMS</button>
+</div>
+<script>
+function kilo(){
+var kil=document.getElementById("kilo").value
+aa=kil * 2.205
+var b=document.getElementById("pound").value=aa
+
+
+}
+
+function pound(){
+var kil=document.getElementById("pound").value
+aa=kil / 2.205
+var b=document.getElementById("kilo").value=aa
+
+
+}
+
+
+</script>
+</body>
+</html>
